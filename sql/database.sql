@@ -18,6 +18,6 @@ create table my_list_details
 
 );
 
-insert into my_list (title) values ('List 1'), ('List 2');
+insert into my_list (title) values ('List A'), ('List B'), ('List My Ass');
 insert into my_list_details (title, list_id) 
-    values ('Connect to database', 1), ('Do queries', 1);
+    values ('Connect 2 database', 1), ('Some queries comming', 1);
