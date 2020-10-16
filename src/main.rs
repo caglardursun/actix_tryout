@@ -22,7 +22,7 @@ async fn main() -> std::io::Result<()>{
     let url: String = format!("{}:{}",conf.server.host,conf.server.port);
     let pool = conf.pg.create_pool(NoTls).unwrap();
      
-    println!("Server is starting on {}",url);
+    println!("Server is starting on http://{}",url);
 
     HttpServer::new(move || {
         App::new()
